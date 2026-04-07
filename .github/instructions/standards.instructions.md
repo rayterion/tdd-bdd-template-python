@@ -1,0 +1,1 @@
+always run commands in a .venv environment by activating it with `.venv\Scripts\activate` on Windows. This ensures that you are using the correct dependencies and Python version for your project.
