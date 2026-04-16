@@ -19,4 +19,10 @@ class TestApiCaller(TestCase):
         response = self.api.getApiRandomNumbers()
         self.assertEqual(response, jsonData)
 
+    @patch('core.apiCaller.requests.get')    
+    def testGetApiRandomNumbersRaises(self, getFunc):
+        """ returns a status of 400 on exceptions """
+        getFunc.side_effect = Exception("Random exception")
+        response = self.api.getApiRandomNumbers()
+        self.assertEqual(response["status_code"], 400)
 
