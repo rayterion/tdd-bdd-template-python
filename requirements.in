@@ -1,0 +1,9 @@
+selenium 
+pytest
+pytest-cov
+pytest-spec
+behave
+factory_boy
+Faker
+pip-tools
+requests

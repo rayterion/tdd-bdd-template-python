@@ -1,3 +1,6 @@
+# This is a default environment.py file for Behave. It sets up a Flask app and a headless Chrome browser for testing. You can customize it as needed for your specific testing requirements.
+
+
 import threading
 from wsgiref.simple_server import make_server
 from selenium import webdriver
